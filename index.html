@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <img src="img/logo_socius.png" alt="Logo Socius">
+    <div class="form-container">
+        <form id="contactForm">
+            <h2>Registrate!</h2>
+            <table class="tabla">
+                <tr>
+                    <td>
+                        <label for="Nombre"><i class="fas fa-user"></i> Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fono"><i class="fas fa-phone"></i> Fono</label>
+                        <input type="number" name="Fono" id="Fono" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fecha"><i class="fas fa-calendar-alt"></i> Fecha</label>
+                        <input type="date" name="Fecha" id="Fecha" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Password"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" name="Password" id="Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pais"><i class="fas fa-globe"></i> Ciudad</label>
+                        <select name="Pais" id="Pais" required>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="EEUU">E.E.U.U</option>
+                            <option value="Peru">Perú</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="Genero" value="m" id="Masculino" required>
+                        <label for="Masculino"><i class="fas fa-mars"></i> Masculino</label>
+                        <input type="radio" name="Genero" value="f" id="Femenino" required>
+                        <label for="Femenino"><i class="fas fa-venus"></i> Femenino</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" id="submitBtn"><i class="fas fa-check"></i> Aceptar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
